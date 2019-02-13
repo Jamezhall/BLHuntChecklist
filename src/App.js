@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import Header from './Layouts/Header/Header';
+import Col from './Layouts/Col/Col';
+import Row from './Layouts/Row/Row';
+import Grouping from './Components/Grouping/Grouping';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <main>
+
+        <Header>
+          <Row>
+            <Col>LEFT</Col>
+            <Col>RIGHT</Col>
+          </Row>
+        </Header>
+
+        <section>
+          <Row>
+            <Col><Grouping /></Col>
+            <Col><Grouping /></Col>
+            <Col><Grouping /></Col>
+            <Col><Grouping /></Col>
+            <Col><Grouping /></Col>
+          </Row>
+        </section>
+
+      </main>
     );
   }
 }
