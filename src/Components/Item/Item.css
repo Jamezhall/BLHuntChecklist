@@ -1,0 +1,40 @@
+/* ITEM - WILL NEED TO SEPERATE ALL THIS*/
+
+.item-point-box {
+    display: inline-block;
+    background-color: var(--color-blue);
+    color: var(--color-purple);
+    font-size: 12px;
+    font-weight: 900;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+
+.item-name {
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.item-notes {
+    display: block;
+    color: #004868;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.item-container.blue {color: var(--color-blue);} 
+.item-container.yellow {color: var(--color-yellow);} 
+.item-container.pink {color: var(--color-pink);} 
+.item-container.green {color: var(--color-green);} 
+
+.item-container.blue .item-point-box {background-color: var(--color-blue);} 
+.item-container.yellow .item-point-box {background-color: var(--color-yellow);} 
+.item-container.pink .item-point-box {background-color: var(--color-pink);} 
+.item-container.green .item-point-box {background-color: var(--color-green);} 

@@ -1,0 +1,48 @@
+.grouping h3 {
+    display:inline-block;
+    background-color: #FFF;
+    color: var(--color-purple);
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.grouping.blue h3 {background-color: var(--color-blue);} 
+.grouping.yellow h3 {background-color: var(--color-yellow);} 
+.grouping.pink h3 {background-color: var(--color-pink);} 
+.grouping.green h3 {background-color: var(--color-green);} 
+
+.grouping-progress-bar {
+    width: 100%;
+    height: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.background-bar {
+    display: block;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.current-progress-bar {
+    display: block;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    z-index: 20; 
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform-origin: left;
+    transform: scaleX(0.2);
+}
+
+.current-progress-bar.blue {background-color: var(--color-blue);} 
+.current-progress-bar.yellow  {background-color: var(--color-yellow);} 
+.current-progress-bar.pink {background-color: var(--color-pink);} 
+.current-progress-bar.green {background-color: var(--color-green);} 

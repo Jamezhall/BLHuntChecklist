@@ -1,0 +1,46 @@
+[
+    {
+        "name" : "Uniques",
+        "color" : "blue",
+        "totalPoints" : 55,
+        "items": [
+            {
+                "points": 12,
+                "itemname": "Gun1",
+                "additionalinformation": "",
+                "found": true
+            },
+            {
+                "points": 2,
+                "itemname": "Gun2",
+                "additionalinformation": "Test additional information",
+                "found": false
+            },
+            {
+                "points": 9,
+                "itemname": "Gun3",
+                "additionalinformation": "Extra Info",
+                "found": true
+            }
+        ]
+    },
+    {
+        "name" : "Legendaries",
+        "color" : "yellow",
+        "totalPoints" : 48,
+        "items": [
+            {
+                "points": 12,
+                "itemname": "Sheild1",
+                "additionalinformation": "",
+                "found": true
+            },
+            {
+                "points": 2,
+                "itemname": "Sheild2",
+                "additionalinformation": "Test additional information",
+                "found": false
+            }
+        ]
+    }
+]

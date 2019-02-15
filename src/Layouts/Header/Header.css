@@ -1,0 +1,13 @@
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+}
+
+.version-text {
+    display: block;
+    color: var(--color-yellow);
+    font-size: 10px;
+    font-weight: 400;
+}

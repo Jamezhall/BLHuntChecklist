@@ -1,36 +1,27 @@
 import React from 'react';
-
+import GroupingHeader from '../GroupingHeader/GroupingHeader';
+import Item from '../Item/Item';
 import './Grouping.css';
 
 class Grouping extends React.Component {
 
-state = {}
+    constructor(props) {
+        super(props);
+
+    }
 
 
 render() {
       return (
         <div>
-            <header className="grouping">
-                <h3>Type (Location)</h3> <h3># Total Points</h3>
-                <div className="grouping-progress-bar">
-                    <span className="background-bar"></span>
-                    <span className="current-progress-bar"></span>
-                </div>
-            </header>
-
-            <div className="item-container">
-                <span className="item-point-box">12</span>
-                <span className="item-name">Item Name - Location Found</span>
-                <span className="item-notes">Requires Level 50</span>
-            </div>
-            <div className="item-container">
-                <span className="item-point-box">12</span>
-                <span className="item-name">Item Name - Location Found</span>
-            </div>
-            <div className="item-container">
-                <span className="item-point-box">12</span>
-                <span className="item-name">Item Name - Location Found</span>
-            </div>
+            <GroupingHeader color={this.props.info.color} name={this.props.info.name} totalPoints={this.props.info.totalPoints} />
+            {
+                this.props.info.items.map((i) => {
+                    return (
+                        <Item key={i.itemname} found={i.found} color={this.props.info.color} name={i.itemname} points={i.points} info={i.additionalinformation}/>
+                    );
+                })
+              }
         </div>
       );
     }
