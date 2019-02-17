@@ -46,7 +46,7 @@ class App extends Component {
     console.log("Wrote to storage");
   }
 
-  resetPage = () => {
+  clearLocalStorage = () => {
     localStorage.clear();
     console.log("All Storage removed");
   }
@@ -62,7 +62,7 @@ class App extends Component {
     return (
       <main>
 
-        <Header onReset={this.resetPage} onSave={this.writeStateToLocalStorage}/>
+        <Header onReset={this.clearLocalStorage} onSave={this.writeStateToLocalStorage}/>
 
         <section>
           <Row>
